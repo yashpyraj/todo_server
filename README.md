@@ -61,21 +61,42 @@ The app uses React Native Navigation to implement a navigation stack that allows
 ## File Structure
 
 |-- node_modules
-|-- src
-| |-- components
-| | |-- TodoItem.tsx
-| |-- screens
-| | |-- LoginScreen.tsx
-| | |-- SignupScreen.tsx
-| | |-- TodoListScreen.tsx
-| |-- store
-| | |-- auth.ts
-| | |-- index.ts
-| | |-- todos.ts
-| |-- App.tsx
-|-- index.js
+|-- server
+|   |-- controllers
+|   |   |-- auth.js
+|   |   |-- todos.js
+|   |-- middleware
+|   |   |-- auth.js
+|   |-- models
+|   |   |-- Todo.js
+|   |   |-- User.js
+|   |-- routes
+|   |   |-- auth.js
+|   |   |-- todos.js
+|   |-- utils
+|   |   |-- generateToken.js
+|   |-- app.js
+|-- client
+|   |-- node_modules
+|   |-- src
+|   |   |-- components
+|   |   |   |-- TodoItem.tsx
+|   |   |-- screens
+|   |   |   |-- LoginScreen.tsx
+|   |   |   |-- SignupScreen.tsx
+|   |   |   |-- TodoListScreen.tsx
+|   |   |-- store
+|   |   |   |-- auth.ts
+|   |   |   |-- index.ts
+|   |   |   |-- todos.ts
+|   |   |-- App.tsx
+|   |-- index.js
+|   |-- package.json
+|   |-- yarn.lock
 |-- package.json
 |-- yarn.lock
+
+
 
 
 
